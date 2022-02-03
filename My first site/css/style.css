@@ -1,19 +1,53 @@
 body {
     font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     background-color: #20202D;
+}
+
+h1, h2, h3, h4, p {
+    color: #FFFFFF;
+}
+
+h2 {
+    font-weight: 700;
+    Font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 84px;
+}
+
+h3 {
+    margin-bottom: 16px;
+    font-style: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+h4 {
+    font-style: bold;;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 7px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 28px;
 }
 
 .container {
     max-width: 920px;
     margin: 0 auto;
-    padding: 0;
 }
 
-.hero {
-    width: 100%;
-    margin-bottom: 64px;
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-text h1 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+    margin-bottom: 20px;
 }
 
 .hero-header {
@@ -22,59 +56,43 @@ body {
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 139px;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
 
 .social-links {
     width: 177px;
-    height: 19px;
 }
 
-.social {
+.social-links a img {
    width: 18px;
    height: 17px;
-   margin-left: 21px;
 }
 
 .hero-content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 64px;   
+    align-items: center;
 }
 
-.hero-text {
+.hero-content .hero-text {
     width: 421px;
 }
 
-#freelancer {
+.hero-description h2 {
     color: #FFBB01;
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 14px;
 }
 
-h1 {
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 59px;
-    margin-bottom: 20px;
-}
-
-.description {
+.hero-description .description {
     position: relative;
     width: 420px;
     height: 86px;
-    font-size: 16px;
-    line-height: 28px;
-    color: #FFFFFF;
     margin-bottom: 38px;
 }
 
-.button {
+.hero-description button {
     position: relative;
     width: 285px;
     height: 66px;
@@ -83,29 +101,22 @@ h1 {
     border-radius: 5px 5px 10px 10px;
 }
 
-#text {
+.hero-description #text {
     position: relative;
     margin: 24px 42px;
     color: #2E2E30;
     font-weight: bold;
     font-size: 12px;
     line-height: 14px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     text-transform: uppercase;
 }
 
 .hero-avatar {
     width: 409px;
     height: 367px;
-    left: 648px;
-    top: 182px;
-    margin-left: 126px;
 }
 
-.mask-group {
-    
+.mask-group {    
     border: 10px solid white;
     border-radius: 50%;
     overflow: hidden;
@@ -135,34 +146,9 @@ h1 {
     width: 80%;
     margin-bottom: 63px;
 }
-
-
-h2 {
-    font-weight: 700;
-    Font-size: 36px;
-    line-height: 42px;
-    color: #FFFFFF;
-    margin-bottom: 84px;
-}
-
 .cards-img {
     margin-bottom: 22px;
 }
-
-h3 {
-    color: #FFFFFF;
-    margin-bottom: 16px;
-    font-style: bold;
-    font-size: 24px;
-    line-height: 28px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 28px;
-    color: #FFFFFF;
-}
-
 .projects {
     width: 100%;
 }
@@ -171,17 +157,12 @@ p {
     margin-top: 76px;
 }
 
-
 .image1 {
     float:left;
     margin-right: 65px;
 }
 
 .company {
-    color: #FFFFFF;
-    margin-bottom: 16px;
-    font-style: bold;
-    font-size: 24px;
     line-height: 28px;
     margin-bottom: 42px;
 }
@@ -205,14 +186,6 @@ p {
 
 .text1 {
     margin-right: 64px;
-}
-
-h4 {
-    font-style: bold;;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFFFFF;
-    margin-bottom: 7px;
 }
 
 .txt {
@@ -243,15 +216,12 @@ h4 {
     margin-right: 10px;
 }
 
-#contacts {
+.contacts h2 {
     margin-bottom: 84px;
 }
 
-.contacts-text {
-    float: right;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 50%;
+.contacts-information {
+    width: 350px;
 }
 
 .social {
@@ -259,7 +229,7 @@ h4 {
     margin-left: 2px;
 }
 
-#social {
+.social h3 {
     margin-top: 53px;
     margin-bottom: 15px;
 }
@@ -275,7 +245,7 @@ h4 {
     margin-bottom: 42px;
 }
 
-.social-links {
-    
+.contacts-information .social-links {
+    width: 100px;
+    margin: 20px 0;
 }
-
