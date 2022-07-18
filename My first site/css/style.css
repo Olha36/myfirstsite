@@ -34,6 +34,7 @@ p {
 }
 
 .container {
+    width: 95%;
     max-width: 920px;
     margin: 0 auto;
 }
@@ -158,8 +159,8 @@ p {
 }
 
 .image1 {
-    float:left;
-    margin-right: 65px;
+    width: 250px;
+    margin: 0 auto;
 }
 
 .company {
@@ -248,4 +249,102 @@ p {
 .contacts-information .social-links {
     width: 100px;
     margin: 20px 0;
+}
+
+/* media */
+@media screen and (max-width: 880px) {
+    .hero-header {
+        width: 95%;
+    }
+    .hero-content {
+        flex-direction: column-reverse;
+    }
+    .cards,
+    .contacts-block,
+    .phone-email,
+    .links,
+    .description {
+        display: block;
+    }
+    .hero-description {
+        margin-top: 62px;
+        display: inline-block;
+        text-align: center;
+    }
+    .hero-description .description {
+        width: 276px;
+        margin-bottom: 17px;
+        height: 138px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .hero-description h1 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .hero-description h2 {
+        font-size: 16px;
+    }
+    .image1 {
+        float: none;
+        margin-bottom: 46px;
+    }
+    .pic {
+        float: left;
+    }
+    .features h2 {
+        text-align: center;
+        font-size: 19px;
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+    }
+    .projects h2 {
+        margin-bottom: 35px;
+    }
+    .cards {
+        display: block;
+        margin: 0 auto;
+        width: 261px;
+    }
+    .txt {
+        width: 210px;
+    }
+    .dots {
+        justify-content: flex-start;
+    }
+    .contacts {
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+    .contacts h2 {
+        text-align: center;
+    }
+    .contacts-information {
+        margin-top: 58px;
+    }
+    .contacts-information p:last-child {
+        padding-bottom: 50px;
+        color: rgba(165, 165, 165, 1);
+    }
+    .phone {
+        margin-bottom: 35px;
+    }
+    .social {
+        margin-bottom: 39px;
+    }
+    @media screen and (max-width: 690px) {
+        .contact-form img {
+            width: 256px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+        
+    
 }
